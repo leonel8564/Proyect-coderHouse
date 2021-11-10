@@ -1,0 +1,58 @@
+.mainTienda__grill{
+    display: grid;
+    grid-template-areas: 
+    "objeto1 objeto2 objeto3 publicidad"
+    "objeto4 objeto5 objeto6 publicidad";
+    grid-template-rows:400px 50px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-items: center;
+    align-items:center;
+    margin: 10px;
+    .o1{
+        grid-area: objeto1;
+        .img1{
+        width: 370px;
+        height: 370px;
+        }
+    }
+    .o2{
+        grid-area: objeto2;
+        .img2{
+        width: 370px;
+        height: 370px;
+        }
+    }
+    .o3{
+        grid-area: objeto3;
+        .img3{
+        width: 370px;
+        height: 370px;
+        }
+    }
+    .o4{
+        grid-area: objeto4;
+        transition: transform 1s;
+    }
+    .o4:hover{
+        transform:translate(-5px,-5px);
+    }
+    .o5{
+        grid-area: objeto5;
+        transition: transform 1s;
+    }
+    .o5:hover{
+        transform:translate(-5px,-5px);
+    }
+    .o6{
+        grid-area: objeto6;
+        transition: transform 1s;
+    }
+    .o6:hover{
+        transform:translate(-5px,-5px);
+    }
+    .publicidad{
+        grid-area:publicidad;
+    }
+}

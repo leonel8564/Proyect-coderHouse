@@ -1,0 +1,80 @@
+@import 'paginas/index';
+@import 'paginas/comunicacion';
+@import 'paginas/tienda';
+@import 'paginas/ubicacion';
+@import 'paginas/nosotros';
+@import 'paginas/variables';
+@import 'paginas/extend';
+
+body{
+    margin:0; padding:0;
+}
+li{
+    color: #353423;
+    margin-left: 10px;
+}
+a{
+    text-decoration: none;
+    font-family:$tipografia;
+}
+.subtitulos{
+    color:map-get($coloresmap,texto1) ;
+    text-decoration: underline ;
+    font-family:$tipografia;
+    margin-left: 10px;
+}
+.parrafo{
+    color:map-get($coloresmap,texto2) ;
+    font-size:130%;
+    font-family:$tipografia;
+}
+.header__divH{
+    @extend %flexbox;
+    height: 100px;
+    background-image: linear-gradient(#FFDC34,#ffffff);
+    .imagen{
+        order: 1;
+        width: 80px;
+        height: 80px;
+        margin: 10px 10px;
+    }
+    .titulos{
+        order: 2;
+        color:#3c256d ;
+        font-family: $tipografia;
+    }
+    .nav__menu{
+        order: 3;
+        list-style: none;
+        text-decoration: none;
+        @extend %flexbox;
+        margin: 10px;
+    }
+}
+.mainIndex{
+    .mainIndex_secTabla{
+        .mainIndex_secTabla__Tabla{
+            transition: transform 1s;
+            width: 300px;
+        }
+        .mainIndex_secTabla__Tabla:hover{
+            transform:translate(10px,10px);
+        }
+    }
+    .mainIndex_section{
+        .mainIndex_section__Video{
+            width: 350px;
+            transition: transform 1s;
+        }
+        .mainIndex_section__Video:hover{
+            transform:translate(10px,10px);
+        }
+    }
+}
+footer{
+    background-image: linear-gradient(to top,#FFDC34,#ffffff);
+    .footer_Link{
+        font-family: $tipografia;
+    }
+}
+
