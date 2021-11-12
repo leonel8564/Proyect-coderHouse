@@ -12,6 +12,7 @@ body{
 li{
     color: #353423;
     margin-left: 10px;
+    list-style-type:none ;
 }
 a{
     text-decoration: none;
@@ -19,9 +20,7 @@ a{
 }
 .subtitulos{
     color:map-get($coloresmap,texto1) ;
-    text-decoration: underline ;
     font-family:$tipografia;
-    margin-left: 10px;
 }
 .parrafo{
     color:map-get($coloresmap,texto2) ;
@@ -35,44 +34,56 @@ a{
     .imagen{
         order: 1;
         width: 80px;
-        height: 80px;
+        height: 70px;
         margin: 10px 10px;
     }
     .titulos{
         order: 2;
         color:#3c256d ;
         font-family: $tipografia;
+        margin-top: 10%;
     }
     .nav__menu{
         order: 3;
         list-style: none;
         text-decoration: none;
         @extend %flexbox;
-        margin: 10px;
+        margin: 30px;
     }
 }
 .mainIndex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 1200px;
+    margin: 0% 10% 0% 10%;
     .mainIndex_secTabla{
         .mainIndex_secTabla__Tabla{
-            transition: transform 1s;
             width: 300px;
         }
-        .mainIndex_secTabla__Tabla:hover{
-            transform:translate(10px,10px);
-        }
+        
     }
     .mainIndex_section{
         .mainIndex_section__Video{
-            width: 350px;
-            transition: transform 1s;
+            width: 300px;
         }
-        .mainIndex_section__Video:hover{
-            transform:translate(10px,10px);
-        }
+        
     }
 }
 footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid white;
     background-image: linear-gradient(to top,#FFDC34,#ffffff);
+    h3{
+        margin: 10px ;
+    }
+    .foter_Copi{
+        justify-content: center;
+        margin-top: 15px;
+        width: 300px;
+    }
     .footer_Link{
         font-family: $tipografia;
     }

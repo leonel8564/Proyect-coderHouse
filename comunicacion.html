@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <meta charset="utf-8"/>
+	<meta name="description" content="Un formulario sirve para enviar datos a otra página que los recoge para usarlos o almacenarlos."/>
     <meta name="descrption" content="esta pagina es la parte de comunicacion sobre el sitio">
     <title>SolarFan</title>
 </head>
@@ -63,49 +65,43 @@
         <div class="comunicacion__formulario">
             <div class="divForm">
                 <h2 class="subtitulos">Formulario</h2>
-                <form action="guardar.php" method="POST">
-                    <div>
-                        <label for="nombre" class="divForm__etiqueta">Nombre y Apellido</label>
-                        <input type="text" name="nombre">
-                    </div>
-                    <br>
-                    <div>
-                        <label for="email" class="divForm__etiqueta">Email</label>
-                        <input type="email" name="email">
-                    </div>
-                    <br>
-                    <div class="etiqueta">
-                        Desea recibir actualizaciones sobre los sistemas?
-                        <input type="checkbox" name="acepta" value="1">
-                    </div>
-                    <br>
-                    <div>
-                        <label for="tipo de instalacion" class="etiqueta">tipo de instalacion que solicita informacion</label>
-                        <select name="tipo de instalacion" >
-                            <option value="340W" class="divForm__etiqueta">340W</option>
-                            <option value="285W" class="divForm__etiqueta">285W</option>
-                            <option value="100W" class="divForm__etiqueta">100W</option>
-                        </select>
-                    </div>
-                    <br>
-                    <div class="etiqueta">
-                        <input type="reset" value="resetear">
-                        <input type="submit" value="enviar">
-                    </div>
+                <form action="#" target="" method="get" name="formDatosPersonales">
+
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre"/>
+                
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" name="apellidos" id="apellidos" placeholder="1r Apellido"/>
+                
+                    <label for="email" />Email</label>
+                    <input type="email" name="email" id="email" placeholder="email" required />
+                
+                    <label for="asunto">Asunto</label>
+                    <input type ="text" name="asunto" id="asunto" placeholder="titular de la consulta"/>
+                
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" for="mensaje" placeholder="describe brevemente en menos de 300 carácteres" maxlength="300"></textarea>
+                    
+                    <input type="submit" name="enviar" value="enviar datos"/>
                 </form>
             </div>
         </div>
     </main>
     <footer>
-        <h3 class="subtitulos">redes</h3>
+        <h3 class="subtitulos">Redes</h3>
         <ul>
             <li>
-                <a href="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a class="footer_Link" href="WhatsApp"> WhatsApp <i class="fab fa-whatsapp"></i></a>
             </li>
             <li>
-                <a href="instagram"><i class="fab fa-instagram"></i></a>
+                <a class="footer_Link" href="instagram"> instagram <i class="fab fa-instagram"></i></a>
             </li>
         </ul>
+        <div class="foter_Copi">
+            <h6>
+                copyrigh@marca registrada
+            </h6>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
