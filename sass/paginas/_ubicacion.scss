@@ -2,3 +2,15 @@
     width: 800px;
     height: 650px;
 }
+.main_Ubicacion{
+    display: flex;
+    flex-direction: column;
+    margin: 0% 10% 0% 10%;
+    justify-content: space-around;
+    .divubi{
+        margin: 30px 0% 30px 0%;
+    }
+    .divubi2{
+        margin-bottom: 30px;
+    }
+}
