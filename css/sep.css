@@ -2,26 +2,32 @@
   list-style-type: square; }
 
 .main_comunicacion {
-  margin: 0% 10% 0% 10%; }
+  margin: 0% 10% 0% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
   .main_comunicacion .comunicacion__formulario {
-    margin-left: 350px;
-    width: 400px; }
+    /* margin-left: 350px */
+    width: 500px; }
     .main_comunicacion .comunicacion__formulario * {
       box-sizing: border-box; }
     .main_comunicacion .comunicacion__formulario form {
-      width: 300px;
+      width: 100%;
       padding: 16px;
       border-radius: 10px;
       margin: auto;
-      background-color: #ccc; }
+      background-color: #ccc;
+      display: flex;
+      flex-direction: column; }
     .main_comunicacion .comunicacion__formulario form label {
       width: 72px;
       font-weight: bold;
       display: inline-block; }
     .main_comunicacion .comunicacion__formulario form input[type="text"],
     .main_comunicacion .comunicacion__formulario form input[type="email"] {
-      width: 180px;
-      padding: 3px 10px;
+      /* width: 180px; */
+      padding: 3px;
       border: 1px solid #f6f6f6;
       border-radius: 3px;
       background-color: #f6f6f6;
@@ -49,8 +55,7 @@
       resize: none;
       display: block; }
   .main_comunicacion .divForm__etiqueta {
-    font-family: 'Merriweather', sans-serif;
-    margin-right: 300px; }
+    font-family: 'Merriweather', sans-serif; }
   .main_comunicacion .divForm {
     margin: 10px; }
 
@@ -59,9 +64,7 @@
 
 .mainTienda__grill {
   display: grid;
-  grid-template-areas: "objeto1 objeto2 objeto3 publicidad"
- "texto1 texto2 texto3 publicidad"
- "objeto4 objeto5 objeto6 publicidad";
+  grid-template-areas: "objeto1 objeto2 objeto3 publicidad" "texto1 texto2 texto3 publicidad" "objeto4 objeto5 objeto6 publicidad";
   grid-template-rows: 400px 100px 50px;
   grid-template-columns: 25% 25% 25% 25%;
   grid-column-gap: 10px;
@@ -116,7 +119,8 @@
   display: flex;
   flex-direction: column;
   margin: 0% 10% 0% 10%;
-  justify-content: space-around; }
+  justify-content: center;
+  align-items: center; }
   .main_Ubicacion .divubi {
     margin: 30px 0% 30px 0%; }
   .main_Ubicacion .divubi2 {
@@ -150,8 +154,7 @@
 @media only screen and (min-width: 1024px) {
   .mainTienda__grill {
     display: grid;
-    grid-template-areas: "objeto1 objeto2 objeto3 publicidad"
- "objeto4 objeto5 objeto6 publicidad";
+    grid-template-areas: "objeto1 objeto2 objeto3 publicidad" "objeto4 objeto5 objeto6 publicidad";
     grid-template-rows: 400px 50px;
     grid-template-columns: repeat(4, 25%);
     grid-column-gap: 10px;
@@ -171,8 +174,7 @@
 @media only screen and (width: 768px) {
   .mainTienda__grill {
     display: grid;
-    grid-template-areas: "objeto1 objeto2 objeto3 publicidad"
- "objeto4 objeto5 objeto6 publicidad";
+    grid-template-areas: "objeto1 objeto2 objeto3 publicidad" "objeto4 objeto5 objeto6 publicidad";
     grid-template-rows: 400px 50px;
     grid-template-columns: repeat(4, 25%);
     grid-column-gap: 10px;
@@ -227,14 +229,7 @@
     width: 10px; }
   .mainTienda__grill {
     display: grid;
-    grid-template-areas: "objeto1"
- "objeto4"
- "objeto2"
- "objeto5"
- "objeto3"
- "objeto6"
- "publicidad"
- "publicidad";
+    grid-template-areas: "objeto1" "objeto4" "objeto2" "objeto5" "objeto3" "objeto6" "publicidad" "publicidad";
     grid-template-rows: repeat(4, 400px 50px);
     grid-template-columns: 400px;
     grid-column-gap: 10px;
@@ -260,14 +255,7 @@
 @media only screen and (max-width: 320px) {
   .mainTienda__grill {
     display: grid;
-    grid-template-areas: "objeto1"
- "objeto4"
- "objeto2"
- "objeto5"
- "objeto3"
- "objeto6"
- "publicidad"
- "publicidad";
+    grid-template-areas: "objeto1" "objeto4" "objeto2" "objeto5" "objeto3" "objeto6" "publicidad" "publicidad";
     grid-template-rows: repeat(4, 400px 50px);
     grid-template-columns: 320px;
     grid-column-gap: 10px;
@@ -314,7 +302,8 @@ a {
 .parrafo {
   color: #2e3f38;
   font-size: 130%;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  margin: 20px 0; }
 
 .header__divH {
   height: 100px;

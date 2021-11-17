@@ -23,10 +23,12 @@ a{
     color:map-get($coloresmap,texto1) ;
     font-family:$tipografia;
 }
-.parrafo{
-    color:map-get($coloresmap,texto2) ;
-    font-size:130%;
-    font-family:$tipografia;
+.parrafo {
+
+    color: #2e3f38;
+    font-size: 130%;
+    font-family: "Open Sans", sans-serif;
+    margin: 20px 0;
 }
 .header__divH{
     @extend %flexbox;
