@@ -59,7 +59,9 @@
 
 .mainTienda__grill {
   display: grid;
-  grid-template-areas: "objeto1 objeto2 objeto3 publicidad" "texto1 texto2 texto3 publicidad" "objeto4 objeto5 objeto6 publicidad";
+  grid-template-areas: "objeto1 objeto2 objeto3 publicidad"
+ "texto1 texto2 texto3 publicidad"
+ "objeto4 objeto5 objeto6 publicidad";
   grid-template-rows: 400px 100px 50px;
   grid-template-columns: 25% 25% 25% 25%;
   grid-column-gap: 10px;
@@ -148,7 +150,8 @@
 @media only screen and (min-width: 1024px) {
   .mainTienda__grill {
     display: grid;
-    grid-template-areas: "objeto1 objeto2 objeto3 publicidad" "objeto4 objeto5 objeto6 publicidad";
+    grid-template-areas: "objeto1 objeto2 objeto3 publicidad"
+ "objeto4 objeto5 objeto6 publicidad";
     grid-template-rows: 400px 50px;
     grid-template-columns: repeat(4, 25%);
     grid-column-gap: 10px;
@@ -168,7 +171,8 @@
 @media only screen and (width: 768px) {
   .mainTienda__grill {
     display: grid;
-    grid-template-areas: "objeto1 objeto2 objeto3 publicidad" "objeto4 objeto5 objeto6 publicidad";
+    grid-template-areas: "objeto1 objeto2 objeto3 publicidad"
+ "objeto4 objeto5 objeto6 publicidad";
     grid-template-rows: 400px 50px;
     grid-template-columns: repeat(4, 25%);
     grid-column-gap: 10px;
@@ -223,7 +227,14 @@
     width: 10px; }
   .mainTienda__grill {
     display: grid;
-    grid-template-areas: "objeto1" "objeto4" "objeto2" "objeto5" "objeto3" "objeto6" "publicidad" "publicidad";
+    grid-template-areas: "objeto1"
+ "objeto4"
+ "objeto2"
+ "objeto5"
+ "objeto3"
+ "objeto6"
+ "publicidad"
+ "publicidad";
     grid-template-rows: repeat(4, 400px 50px);
     grid-template-columns: 400px;
     grid-column-gap: 10px;
@@ -249,7 +260,14 @@
 @media only screen and (max-width: 320px) {
   .mainTienda__grill {
     display: grid;
-    grid-template-areas: "objeto1" "objeto4" "objeto2" "objeto5" "objeto3" "objeto6" "publicidad" "publicidad";
+    grid-template-areas: "objeto1"
+ "objeto4"
+ "objeto2"
+ "objeto5"
+ "objeto3"
+ "objeto6"
+ "publicidad"
+ "publicidad";
     grid-template-rows: repeat(4, 400px 50px);
     grid-template-columns: 320px;
     grid-column-gap: 10px;
