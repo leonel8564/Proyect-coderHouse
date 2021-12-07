@@ -18,41 +18,41 @@
 <body>
     <header class="header">
         <div class="header__divH">
-            <div class="imgLogo">
-                <img src="imagenes/icono.png" alt="Logo de SolarFan" class="imagen">
-            </div>
-            <div class="title">
-                <h1 class="titulos">SolarFan</h1>
-            </div>
-            <nav class="nav">
-                <ul class="nav__menu">
-                    <li>
-                        <a class="btn btn-dark" href="index.html" role="button">Home</a>
-                    </li>
-                    <li class="tienda">
-                        <div class="btn-group">
-                            <a class="btn btn-dark" href="tienda.html">Tienda</a>
-                            <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="visually-hidden">Toggle Dropdown</span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">instalacion 340w</a></li>
-                                <li><a class="dropdown-item" href="#">instalacion 285w</a></li>
-                                <li><a class="dropdown-item" href="#">instalacion 100w</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="btn btn-dark" href="nosotros.html" role="button">Nosotros</a>
-                    </li>
-                    <li>
-                        <a class="btn btn-dark" href="ubicacion.html" role="button">Ubicacion</a>
-                    </li>
-                    <li>
-                        <a class="btn btn-dark nav_Comunicacion" href="comunicacion.html" role="button">Comunicacion</a>
-                    </li>
-                </ul>
-            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid">
+                  <a><img src="imagenes/icono.png" alt="Logo de SolarFan" class="imagen"></a>
+                  <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="ubicacion.html">Ubicacion</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="comunicacion.html">Comunicacion</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="tienda.html">Tienda</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"href="tienda.html">Instalaciones</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">instalacion 340w</a></li>
+                          <li><a class="dropdown-item" href="#">instalacion 285w</a></li>
+                          <li><a class="dropdown-item" href="#">instalacion 100w</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </div>
     </header>
     <main class="mainIndex">
@@ -145,7 +145,7 @@
         <section class="mainIndex_section">
             <h2 class="subtitulos">Instalaciones</h2>
             <div class="mainIndex_section__Video">
-                <iframe id="video" width="315" height="215" src="https://www.youtube.com/embed/wmEjU3_0jz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="video" width="260" height="215" src="https://www.youtube.com/embed/wmEjU3_0jz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
     </main>

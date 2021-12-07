@@ -26,32 +26,16 @@ a{
 .parrafo {
 
     color: #2e3f38;
-    font-size: 130%;
     font-family: "Open Sans", sans-serif;
     margin: 20px 0;
 }
 .header__divH{
-    @extend %flexbox;
-    height: 100px;
     background-image: linear-gradient(#FFDC34,#ffffff);
     .imagen{
         order: 1;
         width: 80px;
         height: 70px;
         margin: 10px 10px;
-    }
-    .titulos{
-        order: 2;
-        color:#3c256d ;
-        font-family: $tipografia;
-        margin-top: 10%;
-    }
-    .nav__menu{
-        order: 3;
-        list-style: none;
-        text-decoration: none;
-        @extend %flexbox;
-        margin: 30px;
     }
 }
 .mainIndex{

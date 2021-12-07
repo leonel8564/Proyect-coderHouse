@@ -1,187 +1,164 @@
-@media only screen and (min-width: 1024px){
+@media only screen and (max-width: 1024px){
+    .mainTienda{
+        height: 1500px;
+        margin: 0% 0% 0% 15%;
+    }
     .mainTienda__grill{
-        display: grid;
-        grid-template-areas: 
-        "objeto1 objeto2 objeto3 publicidad"
-        "objeto4 objeto5 objeto6 publicidad";
-        grid-template-rows:400px 50px;
-        grid-template-columns: repeat(4,25%) ;
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-        justify-items: center;
-        align-items:center;
-    }
-    .img1{
-        width: 300px;
-        height: 300px;
-    }
-    .img2{
-        width: 300px;
-        height: 300px;
-    }
-    .img3{
-        width: 300px;
-        height: 300px;
-    }
-}
-
-@media only screen and (width: 768px){
-    .mainTienda__grill{
-        display: grid;
-        grid-template-areas: 
-        "objeto1 objeto2 objeto3 publicidad"
-        "objeto4 objeto5 objeto6 publicidad";
-        grid-template-rows:400px 50px;
-        grid-template-columns: repeat(4,25%) ;
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-        justify-items: center;
-        align-items:center;
-    }
-    .img1{
-        width: 220px;
-        height: 220px;
-    }
-    .img2{
-        width: 220px;
-        height: 220px;
-    }
-    .img3{
-        width: 220px;
-        height: 220px;
-    }
-    .subtitulos{
-        color:#00918E ;
-        text-decoration: underline ;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 90%;
-    }
-    .parrafo{
-        color:#2e3f38 ;
-        font-size: 90%;
-        font-family: 'Open Sans', sans-serif;
-    }
-    .imagenZona{
-        width: 700px;
-        height: 700px;
-    }
-    .video{
-        width: 10px;
-    }
-}
-@media only screen and (max-width: 425px){
-    .subtitulos{
-        color:#00918E ;
-        text-decoration: underline ;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 90%;
-    }
-    .parrafo{
-        color:#2e3f38 ;
-        font-size: 90%;
-        font-family: 'Open Sans', sans-serif;
-    }
-    li{
-        margin-left: -35px;
-        margin-top: -3px;
-    }
-    .header{
-        height: 200px;
-    }
-    .comunicacion__formulario{
-        width: 290px;
-    }
-    .nav__menu{
         display: flex;
         flex-direction: column;
     }
-    
-    .video{
-        width: 10px;
+}
+
+@media only screen and (max-width: 768px){
+    .parrafo{
+        font-size: 110%;
     }
-    .mainTienda__grill{
-        display: grid;
-        grid-template-areas: 
-        "objeto1"
-        "objeto4"
-        "objeto2"
-        "objeto5"
-        "objeto3"
-        "objeto6"
-        "publicidad"
-        "publicidad";
-        grid-template-rows:repeat(4,400px 50px) ;
-        grid-template-columns: 400px;
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-        justify-items: center;
-        align-items:center;
-    }
-    .img1{
-        width: 370px;
-        height: 370px;
-    }
-    .img2{
-        width: 370px;
-        height: 370px;
-    }
-    .img3{
-        width: 370px;
-        height: 370px;
+    .main_Nosotros{
+        margin: 0% 10% 0% 10%;
     }
     .imagenZona{
-        width: 400px;
-        height: 400px;
+        width: 315px;
+        height: 260px;
     }
     .map{
-        width:400px; 
-        height:350px;
+        width: 315px;
+        height: 260px;
+    }
+    .main_comunicacion{
+        margin: 0% 10% 0% 10%;
+        .comunicacion__formulario{
+            width: 315px;
+        }
+    }
+    .textocom{
+        width: 300px;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        ul{
+            padding: 0%;
+        }
+        li{
+            margin: 0%;
+        }
+        .footer_Link{
+            margin: 0%;
+        }
+        h6{
+            margin: 15px 0px 0px 0px;
+        }
+    }
+    .mainTienda{
+        height: 1500px;
+        margin: 0% 0% 0% 15%;
+    }
+    .mainTienda__grill{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 425px){
+    .parrafo{
+        font-size: 100%;
+    }
+    .main_Nosotros{
+        margin: 0% 10% 0% 10%;
+    }
+    .imagenZona{
+        width: 315px;
+        height: 260px;
+    }
+    .map{
+        width: 315px;
+        height: 260px;
+    }
+    .main_comunicacion{
+        margin: 0% 10% 0% 10%;
+        .comunicacion__formulario{
+            width: 315px;
+        }
+    }
+    .textocom{
+        width: 300px;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        ul{
+            padding: 0%;
+        }
+        li{
+            margin: 0%;
+        }
+        .footer_Link{
+            margin: 0%;
+        }
+        h6{
+            margin: 15px 0px 0px 0px;
+        }
+    }
+    .mainTienda{
+        height: 1500px;
+        margin: 0% 0% 0% 0%;
+    }
+    .mainTienda__grill{
+        display: flex;
+        flex-direction: column;
+        
     }
 }
 @media only screen and (max-width: 320px){
-    .mainTienda__grill{
-        display: grid;
-        grid-template-areas: 
-        "objeto1"
-        "objeto4"
-        "objeto2"
-        "objeto5"
-        "objeto3"
-        "objeto6"
-        "publicidad"
-        "publicidad";
-        grid-template-rows:repeat(4,400px 50px) ;
-        grid-template-columns: 320px;
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-        justify-items: center;
-        align-items:center;
+    .parrafo{
+        font-size: 90%;
     }
-    .img1{
-        width: 300px;
-        height: 300px;
-    }
-    .img2{
-        width: 300px;
-        height: 300px;
-    }
-    .img3{
-        width: 300px;
-        height: 300px;
-    }
-    .header{
-        height: 200px;
+    .main_Nosotros{
+        margin: 0% 10% 0% 10%;
     }
     .imagenZona{
-        width: 300px;
-        height: 300px;
+        width: 315px;
+        height: 260px;
     }
     .map{
-        width: 300px;
-        height: 300px;
+        width: 315px;
+        height: 260px;
     }
-    .comunicacion__formulario{
-        width: 290px;
+    .main_comunicacion{
+        margin: 0% 10% 0% 10%;
+        .comunicacion__formulario{
+            width: 315px;
+        }
+    }
+    .textocom{
+        width: 300px;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        ul{
+            padding: 0%;
+        }
+        li{
+            margin: 0%;
+        }
+        .footer_Link{
+            margin: 0%;
+        }
+        h6{
+            margin: 15px 0px 0px 0px;
+        }
+    }
+    .mainTienda{
+        height: 1500px;
+        margin: 0% 100% 0% 0%;
+    }
+    .mainTienda__grill{
+        display: flex;
+        flex-direction: column;
+        
     }
 }
 
